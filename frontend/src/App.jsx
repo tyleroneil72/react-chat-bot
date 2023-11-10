@@ -4,9 +4,12 @@ import "./css/App.css";
 
 const App = () => {
   return (
-    <main>
-      <Chat />
-    </main>
+    <>
+      <main>
+        <Chat />
+      </main>
+      <Footer />
+    </>
   );
 };
 
