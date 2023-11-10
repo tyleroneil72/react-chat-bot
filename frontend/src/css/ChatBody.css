@@ -1,0 +1,6 @@
+.chat-body {
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  

@@ -1,0 +1,30 @@
+:root {
+    --main-colour: #415a77;
+    --secondary-colour: #e0e1dd;
+    --third-colour: #1b263b;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+.chat-container {
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.chat-title {
+    background-color: var(--main-colour);
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: solid #fff 1px;
+}
+  
