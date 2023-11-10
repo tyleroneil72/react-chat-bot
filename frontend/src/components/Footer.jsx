@@ -6,8 +6,12 @@ const Footer = () => {
     <>
       <footer>
         Created by Tyler O'Neil
-        <a href='https://github.com/tyleroneil72'>Github</a>
-        <a href='https://www.linkedin.com/in/tyler-oneil-dev/'>Linkedin</a>
+        <a target='_blank' href='https://github.com/tyleroneil72'>
+          Github
+        </a>
+        <a target='_blank' href='https://www.linkedin.com/in/tyler-oneil-dev/'>
+          Linkedin
+        </a>
       </footer>
     </>
   );
