@@ -22,10 +22,6 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "..", "frontend", "index.html"));
 });
 
-app.get("/config", (req, res) => {
-  res.json({ PORT: BACKEND_PORT });
-});
-
 const server = app.listen(BACKEND_PORT, function () {
   console.log(`Express Server running at http://127.0.0.1:${BACKEND_PORT}/`);
   exec(`open http://localhost:${FRONTEND_PORT}/`);
