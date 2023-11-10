@@ -42,14 +42,18 @@ Sign up for an account at OpenAI.
 Get your API key from the OpenAI dashboard.
 Create a .env file in the root directory and add your API key:
 ```dotenv
-API_KEY="YOUR KEY HERE"
+API_KEY='YOUR KEY HERE'
+# You may need to change this depending on your accounts access, gpt 3.5 is available to all accounts
+MODEL='gpt-4'
+# MODEL='gpt-3.5-turbo' 
+# If you change this express port, it also must be changed in frontend/src/chat/Chat.jsx EXPRESS_PORT variable
+EXPRESS_PORT='3000' 
+VITE_PORT='5173'
 ```
-You may need to change the model in the backend/services/openaiService.js file depending on availability
 ```javascript
+const gptModel = process.env.MODEL;
 const response = await openai.createChatCompletion({
-      // Switch to different models if necessary
-      // model: "gpt-3.5-turbo",
-      model: "gpt-4",
+      model: gptModel,
       messages: messages,
     });
 ```
