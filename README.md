@@ -1,4 +1,4 @@
-# Chat Bot using React.js, Node.js, Express, and OpenAI API
+# Chat Bot using React.js, Node.js, Express.js, and OpenAI API
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![React](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
@@ -8,7 +8,7 @@
 
 ## Description
 
-This is a chat bot built with React.js, Node.js and Express, integrated with OpenAI's API to provide natural language processing capabilities. The bot can engage in conversations with users, answer questions, and provide responses based on the context of the conversation.
+This is a chat bot built with React.js, Node.js and Express.js, integrated with OpenAI's API to provide natural language processing capabilities. The bot can engage in conversations with users, answer questions, and provide responses based on the context of the conversation.
 
 ## Features
 
