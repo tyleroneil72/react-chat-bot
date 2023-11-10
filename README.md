@@ -18,7 +18,7 @@ This is a chat bot built with React.js, Node.js and Express.js, integrated with 
 - Fully customizable/tweakable
 
 ## Example
-![image](https://github.com/tyleroneil72/chat-bot/assets/43754564/9f63c52f-9229-49ef-8987-4e5d080f8672)
+![Image 2023-11-10 at 3 30 PM](https://github.com/tyleroneil72/react-chat-bot/assets/43754564/9eb22eb0-b6a5-4334-8239-488e022c35d2)
 
 
 ## Installation
