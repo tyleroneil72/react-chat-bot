@@ -6,7 +6,9 @@ dotenv.config({ path: "../.env" });
 const configuration = new Configuration({
   apiKey: process.env.API_KEY,
 });
+
 const openai = new OpenAIApi(configuration);
+const gptModel = process.env.MODEL;
 
 async function callGPT(promptContent, systemContent, previousChat) {
   try {
@@ -30,8 +32,7 @@ async function callGPT(promptContent, systemContent, previousChat) {
     messages.push(assistantPrompt);
 
     const response = await openai.createChatCompletion({
-      model: "gpt-4", // Switch to different models if necessary
-      // model: "gpt-3.5-turbo",
+      model: gptModel,
       messages: messages,
     });
 
