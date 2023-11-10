@@ -70,7 +70,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 This project was inspired by the capabilities of OpenAI's API.
 
-This project was initially created without react [click here](https://github.com/tyleroneil72/chat-bot) for the old repository
+This project was originally crafted without the use of React. If you're curious to explore its earlier version, you can find the legacy repository by clicking [here](https://github.com/tyleroneil72/chat-bot) 
+
 ## Contact
 For any inquiries or questions, you can reach me at tyleroneil72@gmail.com
 or on my linkedin at https://ca.linkedin.com/in/tyler-oneil-dev
