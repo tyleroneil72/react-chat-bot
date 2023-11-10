@@ -30,8 +30,8 @@ async function callGPT(promptContent, systemContent, previousChat) {
     messages.push(assistantPrompt);
 
     const response = await openai.createChatCompletion({
-      //   model: "gpt-4", // Switch to different models if necessary
-      model: "gpt-3.5-turbo",
+      model: "gpt-4", // Switch to different models if necessary
+      // model: "gpt-3.5-turbo",
       messages: messages,
     });
 
