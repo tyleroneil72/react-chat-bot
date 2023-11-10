@@ -1,0 +1,26 @@
+footer {
+    background-color: var(--third-colour);
+    color: var(--secondary-colour); 
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+footer a {
+    color: var(--secondary-colour);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+  
+
+footer a:hover {
+    color: #838d98;
+    transition: 0.2s ease-in-out; 
+}
+  
