@@ -3,6 +3,7 @@ import "../css/Footer.css";
 
 const Footer = () => {
   return (
+    // Using React fragments to avoid unnecessary divs
     <>
       <footer>
         Created by Tyler O'Neil
