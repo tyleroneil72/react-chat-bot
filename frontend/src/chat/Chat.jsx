@@ -10,15 +10,17 @@ const Chat = () => {
   const [typingIntervalId, setTypingIntervalId] = useState(null);
   const [typingIndicatorMessage, setTypingIndicatorMessage] =
     useState("Typing");
-  const EXPRESS_PORT = 3000;
+  const EXPRESS_PORT = 3000; // Port that the Express server is running on
 
   const firstRender = useRef(true); // Using useRef to check the first render
 
   const displayUserMessage = (message) => {
+    // Add the user's message to the chat messages
     setChatMessages((prevChatMessages) => [
       ...prevChatMessages,
       { message, type: "user" },
     ]);
+    // Clear the input field
     setUserInput("");
   };
 
@@ -33,7 +35,7 @@ const Chat = () => {
       { message, type: "chatbot" },
     ]);
   };
-
+  // Typing indicator logic
   const displayTypingIndicator = () => {
     if (!isChatbotTyping) {
       setIsChatbotTyping(true);
@@ -94,7 +96,7 @@ const Chat = () => {
       sendMessage();
     }
   };
-
+  // Display welcome message on first render
   useEffect(() => {
     if (firstRender.current) {
       firstRender.current = false;
