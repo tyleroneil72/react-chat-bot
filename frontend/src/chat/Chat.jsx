@@ -39,6 +39,7 @@ const Chat = () => {
   const displayTypingIndicator = () => {
     if (!isChatbotTyping) {
       setIsChatbotTyping(true);
+      clearInterval(typingIntervalId); // Clear the interval before setting a new one
       const intervalId = setInterval(() => {
         setTypingIndicatorMessage((prevMessage) => {
           if (prevMessage === "Typing...") {
