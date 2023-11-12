@@ -26,7 +26,7 @@ async function callGPT(promptContent, systemContent, previousChat) {
       role: "assistant",
       content: previousChat,
     };
-
+    // Messages will contain all the information needed for the api to have context
     messages.push(userPrompt);
     messages.push(systemPrompt);
     messages.push(assistantPrompt);
