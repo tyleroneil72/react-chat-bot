@@ -20,7 +20,7 @@ async function handleMessage(req, res) {
   }
 
   const response = await callGPT(content, system, chatLog);
-  // The chat log is updated with the user message and the response from the bot
+  // The chat log is updated with the user message and the response from the bot for context
   chatLog += "User: " + content + "\n";
   chatLog += "Chat Bot: " + response + "\n";
 
