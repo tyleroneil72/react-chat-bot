@@ -64,6 +64,7 @@ const Chat = () => {
     displayTypingIndicator();
 
     try {
+      // Send the user's message to the Express server to be processed by the chatbot
       const response = await fetch(`http://127.0.0.1:${EXPRESS_PORT}/message`, {
         method: "POST",
         headers: {
@@ -89,7 +90,7 @@ const Chat = () => {
   const handleInputChange = (e) => {
     setUserInput(e.target.value);
   };
-
+  // Send message when the user presses the enter key
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
