@@ -37,6 +37,8 @@ async function callGPT(promptContent, systemContent, previousChat) {
     });
 
     // This is for debugging purposes
+    console.log(0);
+    console.log(promptContent);
     console.log(1);
     console.log(response.data.choices[0].message.content);
     // Contains the response from the chat completion API
