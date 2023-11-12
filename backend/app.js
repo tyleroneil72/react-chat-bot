@@ -17,7 +17,7 @@ app.use(cors()); // Allow cross-origin requests
 app.use(routes); // Use the routes defined in backend/routes/index.js
 
 app.use(express.static(path.join(__dirname, "..", "frontend")));
-
+// This is the route that will serve the frontend
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "..", "frontend", "index.html"));
 });
