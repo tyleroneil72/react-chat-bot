@@ -45,7 +45,7 @@ Create a .env file in the root directory and add your API key:
 API_KEY='YOUR KEY HERE'
 # You may need to change this depending on your accounts access, gpt 3.5 is available to all accounts
 MODEL='gpt-4'
-# MODEL='gpt-3.5-turbo-1106' # This model is soon to be deprecated
+# MODEL='gpt-3.5-turbo-1106' This model is soon to be deprecated
 # MODEL='gpt-3.5-turbo'
 # If you change this express port, it also must be changed in frontend/src/chat/Chat.jsx EXPRESS_PORT variable
 EXPRESS_PORT='3000' 
